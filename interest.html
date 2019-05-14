@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Retirement Calculator
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+</head>
+	<body>
+<!--
+Description of app:
+VERSION 1: THE BASICS
+You enter:
+-current retirement savings
+-how many years you will continue to save
+-interest rate (what if you could pick average return for any 20-year period?)
+-how many years you will collect interest
+-when you will start drawing it down
+-how much you will draw down every year
+
+It tells you:
+-how much you'll have every year
+-when you'll run out of money
+-facts about the 20-year average you selected
+
+DONE
+-get number of years of saving
+-get current savings
+-get interest rate
+-when button is clicked, calculate return after (age) years of (interest rate) based on (current savings)
+-check that entries are numbers
+-convert % interest rate to decimal
+
+// TO DO
+
+-->
+	
+		<header class="header">
+			<div class="title">
+				<h1>Calculate Compound Interest</h1>
+			</div>
+		</header>
+		<main>
+			<form class='form' id='form'>
+				<div class='question'>
+					<label for='age'>Enter the number of years you will earn interest:</label>
+					<input type='text' id='age' class='ageField' name='user_age' autofocus="">
+				</div>
+				<div class='question'>
+					<label for='Savings'>Enter your current savings:</label>
+					<input type='text' id='savings' name='user_savings'>
+				</div>
+				<div class='question'>
+					<label for='rate'>Enter the expected percent interest rate:</label>
+					<input type='text' id='rate' name='interest_rate'>
+				</div>
+				<div class='button' id='submitButton'>
+					<h3>Calculate</h3>
+				</div>
+			</form>
+			<div class='answer' id='answer'>
+			</div>
+			<div class='button' id='resetButton'>
+					<h3>Reset form</h3>
+				</div>
+				<div class='button' id='eraseButton'>
+					<h3>Erase entries</h3>
+				</div>
+		</main>
+
+<script src='app.js'></script>
+
+	</body>
+</html>
+
